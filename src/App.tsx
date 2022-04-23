@@ -7,7 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Landing from "./Pages/Landing";
 import PartnerLanding from "./Pages/PartnerLanding";
 import AdminLanding from "./Pages/AdminLanding";
-import Counter from "./Features/counter/Counter";
+import Counter from "./Features/CounterApp/Counter";
 import Loading from "./Components/Loading";
 import NotFound from "./Pages/NotFound";
 import Dashboard from "./Components/Container";
