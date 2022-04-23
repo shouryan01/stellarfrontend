@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 import { useAuth0 } from "@auth0/auth0-react";
 
 // Components
@@ -10,7 +11,6 @@ import Counter from "./Features/counter/Counter";
 import Loading from "./Components/Loading";
 import NotFound from "./Pages/NotFound";
 import Dashboard from "./Components/Container";
-
 // Dashboard pages
 import Summary from "./Pages/Summary";
 // Social
@@ -20,16 +20,39 @@ import Groups from "./Pages/Groups";
 import Insurance from "./Pages/Insurance";
 import Cars from "./Pages/Cars";
 // Settings
-import Settings from "./Pages/Setting";
+import Settings from "./Pages/Settings";
 
-import Counter from "./Features/counter/Counter";
 
-function App(): JSX.Element {
+export default function App() {
+  const { isLoading, error } = useAuth0();
+
+  if (error) {
+    return <div>Oops... {error.message}</div>;
+  }
+  
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
-    <div className="App">
-      <Counter />
-    </div>
+    <Routes>
+        <Route path="/" element={<Landing />}/>
+        <Route path="/dashboard/" element={<Dashboard />} > 
+          <Route path="summary" element={<Summary />} />
+          <Route path="friends" element={<Friends />} />  
+          <Route path="groups" element={<Groups />} />
+          <Route path="insurance" element={<Insurance />} />
+          <Route path="cars" element={<Cars />} />  
+          <Route path="settings" element={<Settings />} />
+        </Route>
+        <Route path="/partner" element={<PartnerLanding />}> 
+
+        </Route>
+        <Route path="/admin" element={<AdminLanding />}>
+
+        </Route>
+        <Route path="/example" element={<Counter />}/>
+        <Route path="*" element={<NotFound />}/>
+    </Routes>
   );
 }
-
-export default App;
