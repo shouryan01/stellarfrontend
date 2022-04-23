@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-import { useAppSelector, useAppDispatch } from "../../app/hooks";
+import { useAppSelector, useAppDispatch } from "../../Redux/hooks";
+import { Space, Button } from 'antd';
+import 'antd/dist/antd.variable.min.css';
 import {
   decrement,
   increment,
@@ -20,6 +22,7 @@ export default function Counter(): JSX.Element {
   return (
     <div>
       <div className="flex w-min px-4 py-2 rounded-lg shadow-md items-center justify-center gap-4 bg-gray-400 mx-auto mt-8">
+        
         <button
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
@@ -38,6 +41,7 @@ export default function Counter(): JSX.Element {
           +
         </button>
       </div>
+      
       <div className="flex w-max px-4 py-2 rounded-lg shadow-md items-center justify-center gap-4 bg-gray-400 mx-auto mt-8">
         <input
           aria-label="Set increment amount"
@@ -64,6 +68,14 @@ export default function Counter(): JSX.Element {
           Add If Odd
         </button>
       </div>
+
+      <div className="centered-container">
+        This is an example of reusing styles (although this isn't recommended), this is defined in index.css under the component centered-container
+      </div>
+
+
+      
+
     </div>
   );
 }

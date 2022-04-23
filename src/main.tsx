@@ -1,21 +1,44 @@
 import React from "react";
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
-import App from "./App";
-import { store } from "./app/store";
+
+// Redux
 import { Provider } from "react-redux";
+import { store } from "./Redux/store";
 
-import { createRoot } from "react-dom/client";
+// Auth
+import { Auth0Provider } from "@auth0/auth0-react";
+import history from "./Utils/History";
+import { getConfig } from "./Utils/Config";
 
-const container = document.getElementById("root");
+// Components
+import App from "./App";
 
-if (!container) throw new Error("Could not find root element with id 'root'");
+const onRedirectCallback = (appState: any) => {
+  history.push(
+    appState && appState.returnTo ? appState.returnTo : window.location.pathname
+  );
+};
 
-const root = createRoot(container);
+const config = getConfig();
+const providerConfig = {
+  domain: config.domain,
+  clientId: config.clientId,
+  ...(config.audience ? { audience: config.audience } : null),
+  redirectUri: window.location.origin,
+  onRedirectCallback,
+};
 
-root.render(
+ReactDOM.render (
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Auth0Provider {...providerConfig}>
+        <Router>
+          <App />
+        </Router>
+      </Auth0Provider>
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
