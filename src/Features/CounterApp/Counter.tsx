@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 import { useAppSelector, useAppDispatch } from "../../Redux/hooks";
-import { Space, Button } from 'antd';
-import 'antd/dist/antd.variable.min.css';
 import {
   decrement,
   increment,
@@ -72,10 +70,6 @@ export default function Counter(): JSX.Element {
       <div className="centered-container">
         This is an example of reusing styles (although this isn't recommended), this is defined in index.css under the component centered-container
       </div>
-
-
-      
-
     </div>
   );
 }

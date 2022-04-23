@@ -1,4 +1,4 @@
-import configJson from "../../auth_config.json"
+import configJson from "../Utils/auth_config.json"
 
 export function getConfig() {
   // Configure the audience here. By default, it will take whatever is in the config
@@ -13,6 +13,7 @@ export function getConfig() {
       : null;
 
   return {
+    // domain: configJson.domain,
     domain: configJson.domain,
     clientId: configJson.clientId,
     ...(audience ? { audience } : null),
