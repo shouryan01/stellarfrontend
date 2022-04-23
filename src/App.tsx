@@ -22,6 +22,8 @@ import Cars from "./Pages/Cars";
 // Settings
 import Settings from "./Pages/Settings";
 
+import 'antd/dist/antd.variable.min.css';
+
 
 export default function App() {
   const { isLoading, error } = useAuth0();
