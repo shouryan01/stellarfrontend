@@ -13,6 +13,7 @@
     "@types/auth0": "^2.34.19",
     "antd": "^4.19.5",
     "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^7.2.6",
