@@ -1,10 +1,12 @@
 import React from "react";
-import { Card, Row, Col } from 'antd';
+import { Card, Row, Col, Typography } from 'antd';
 const { Meta } = Card;
+const { Title } = Typography;
 
 export default function Cars (): JSX.Element {
     return (
         <div>
+            <Title>Celebrate Stellantis! 🎉</Title>
             <Row  justify='center'>
                 <Col>
                     <Card

@@ -49,9 +49,12 @@ export default function Sidebar ():JSX.Element {
             </SubMenu>
             <SubMenu key="6" icon={<DollarCircleOutlined />} title="Offers">
                 <Menu.Item key="7" icon={<WalletOutlined />}><Link to="insurance">Insurance</Link></Menu.Item>
-                <Menu.Item key="8" icon={<CarOutlined />}><Link to="cars">Cars</Link></Menu.Item>
+                <Menu.Item key="8" icon={<DollarCircleOutlined />}><Link to="rewards">Rewards</Link></Menu.Item>
             </SubMenu>
-            <Menu.Item key="9" icon={<SettingOutlined />}>
+            <Menu.Item key="9" icon={<CarOutlined />}>
+                <Link to="cars">Explore</Link>
+            </Menu.Item>
+            <Menu.Item key="10" icon={<SettingOutlined />}>
                 <Link to="settings">Settings</Link>
             </Menu.Item>
         </Menu>

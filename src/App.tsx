@@ -22,6 +22,7 @@ import Insurance from "./Pages/Insurance";
 import Cars from "./Pages/Cars";
 // Settings
 import Settings from "./Pages/Settings";
+import Rewards from "./Pages/Rewards";
 
 
 export default function App() {
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="insurance" element={<Insurance />} />
           <Route path="cars" element={<Cars />} />  
           <Route path="settings" element={<Settings />} />
+          <Route path="rewards" element={<Rewards />} />
         </Route>
         <Route path="/partner" element={<PartnerLanding />}> 
 
