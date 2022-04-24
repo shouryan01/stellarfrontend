@@ -1,5 +1,5 @@
 import React from "react";
-import loading from "../Assets/Loading.svg";
+import loading from "../Assets/loading.svg";
 
 const Loading = () => (
   <div className="bg-white flex justify-center h-screen absolute inset-0 w-screen">

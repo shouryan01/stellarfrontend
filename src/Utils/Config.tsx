@@ -13,6 +13,7 @@ export function getConfig() {
       : null;
 
   return {
+    // domain: configJson.domain,
     domain: configJson.domain,
     clientId: configJson.clientId,
     ...(audience ? { audience } : null),
