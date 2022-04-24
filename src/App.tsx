@@ -16,11 +16,13 @@ import Summary from "./Pages/Summary";
 // Social
 import Friends from "./Pages/Friends";
 import Groups from "./Pages/Groups";
+import Global from "./Pages/Global";
 // Offers
 import Insurance from "./Pages/Insurance";
 import Cars from "./Pages/Cars";
 // Settings
 import Settings from "./Pages/Settings";
+import Rewards from "./Pages/Rewards";
 
 import 'antd/dist/antd.variable.min.css';
 
@@ -41,10 +43,12 @@ export default function App() {
         <Route path="/dashboard/" element={<Dashboard />} > 
           <Route path="summary" element={<Summary />} />
           <Route path="friends" element={<Friends />} />  
+          <Route path="global" element={<Global />} />  
           <Route path="groups" element={<Groups />} />
           <Route path="insurance" element={<Insurance />} />
           <Route path="cars" element={<Cars />} />  
           <Route path="settings" element={<Settings />} />
+          <Route path="rewards" element={<Rewards />} />
         </Route>
         <Route path="/partner" element={<PartnerLanding />}> 
 

@@ -27,7 +27,7 @@ export const Container = ():JSX.Element => {
 					}}
 
 				>
-					Title Goes Here 
+					Hello {user.name}!
 				</Header>
 				<Content>
 					<div style={{ padding: 24, minHeight: 360, textAlign: 'center' }}>

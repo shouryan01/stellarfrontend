@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Table, Typography } from 'antd';
+import React from "react";
 import axios from "axios";
+import { Table, Typography } from 'antd';
 
 const { Title } = Typography;
 
@@ -42,10 +42,10 @@ const dataSource = [
   },
 ];
 
-function getData(): object {
+function getData() {
   axios.get('http://localhost:8000/api/drivers/')
       .then(function (response) {
-          console.log(response.data);
+          console.log(response.data[2].username);
           return response.data
       })
       .catch(function (error) {
@@ -78,19 +78,14 @@ const columns = [
 ];
 
 
+export default function Global (): JSX.Element {
+    
 
-export default function Friends() {
-  const [users, setUsers] = useState({});
-
-  useEffect(() => {
-    setUsers(getData())
-  });
-
-  return (
-    <div>
-      <Title>Friends Leaderboard</Title>
-      <br />
-      <Table dataSource={dataSource} columns={columns} />
-    </div>
-  );
-}
+    return (
+        <div>
+            <Title>National Leaderboard</Title>
+            <br />
+            <Table dataSource={dataSource} columns={columns} />
+        </div>
+    )
+};

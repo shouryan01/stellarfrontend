@@ -10,6 +10,7 @@ import {
     WalletOutlined,
     CarOutlined,
     SettingOutlined,
+    GlobalOutlined
   } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -42,14 +43,18 @@ export default function Sidebar ():JSX.Element {
                 <Link to="summary">Dashboard</Link>
             </Menu.Item>
             <SubMenu key="2" icon={<TeamOutlined />} title="Social">
-                <Menu.Item key="3" icon={<SmileOutlined />}><Link to="friends">Friends</Link></Menu.Item>
-                <Menu.Item key="4" icon={<ApartmentOutlined />}><Link to="groups">Groups</Link></Menu.Item>
+                <Menu.Item key="4" icon={<SmileOutlined />}><Link to="friends">Friends</Link></Menu.Item>
+                <Menu.Item key="5" icon={<ApartmentOutlined />}><Link to="groups">State</Link></Menu.Item>
+                <Menu.Item key="3" icon={<GlobalOutlined />}><Link to="global">National</Link></Menu.Item>
             </SubMenu>
-            <SubMenu key="5" icon={<DollarCircleOutlined />} title="Offers">
-                <Menu.Item key="6" icon={<WalletOutlined />}><Link to="insurance">Insurance</Link></Menu.Item>
-                <Menu.Item key="7" icon={<CarOutlined />}><Link to="cars">Cars</Link></Menu.Item>
+            <SubMenu key="6" icon={<DollarCircleOutlined />} title="Offers">
+                <Menu.Item key="7" icon={<WalletOutlined />}><Link to="insurance">Insurance</Link></Menu.Item>
+                <Menu.Item key="8" icon={<DollarCircleOutlined />}><Link to="rewards">Rewards</Link></Menu.Item>
             </SubMenu>
-            <Menu.Item key="8" icon={<SettingOutlined />}>
+            <Menu.Item key="9" icon={<CarOutlined />}>
+                <Link to="cars">Explore</Link>
+            </Menu.Item>
+            <Menu.Item key="10" icon={<SettingOutlined />}>
                 <Link to="settings">Settings</Link>
             </Menu.Item>
         </Menu>
