@@ -85,7 +85,7 @@ export default function Landing (): JSX.Element {
             <span className="block xl:inline">It pays to </span>
             <span className="block text-blue-400 xl:inline">drive ✨STELLAR✨</span>
             </h1>
-            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"> We care for your safety. Join Stellantis to drive Stellar by praciticing safe driving and be rewarded.</p>
+            <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"> Your experience is our #1 priority. Join Stellantis to drive Stellar by praciticing safe driving and be rewarded.</p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
 
@@ -124,7 +124,7 @@ export default function Landing (): JSX.Element {
                     </div>
                     <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Competition</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500"> Share your acitvity and compete with friends, family, or a team of your choice. Encourage each other </dd>
+                <dd className="mt-2 ml-16 text-base text-gray-500">Encourage friends, family, or a team of your choice to drive safely by accomplishing certain tasks to compete for ranks on the leaderboard.  </dd>
                 </div>
 
                 <div className="relative">
@@ -135,9 +135,9 @@ export default function Landing (): JSX.Element {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                     </svg>
                     </div>
-                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Increased Car Lifespan</p>
+                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Vehicle Longevity</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">Driving with Stellar saves an average lifespan of your Stellantis vehicle by 60%.</dd>
+                <dd className="mt-2 ml-16 text-base text-gray-500">Driving with Stellar increases your Stellantis vehicle's life expectancy by promoting safe and fun driving.</dd>
                 </div>
 
                 <div className="relative">
@@ -148,9 +148,9 @@ export default function Landing (): JSX.Element {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                     </div>
-                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Customer Centricity</p>
+                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Consumer</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">We care about your experience. Driving Stellar means your convience is first priority. Stellar provides exceptional service to customers by offering valuable information for an engaging driving.</dd>
+                <dd className="mt-2 ml-16 text-base text-gray-500">Driving Stellar means your convience is our 1st priority. Stellar continues to deliver exceptional service to continue customer centric focus.</dd>
                 </div>
 
                 <div className="relative">
@@ -163,7 +163,7 @@ export default function Landing (): JSX.Element {
                     </div>
                     <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Rewards</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">Save  adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                <dd className="mt-2 ml-16 text-base text-gray-500">Earn points for driving with stellar and reedem your points on insurance, Stellantis merch, and more!</dd>
                 </div>
             </dl>
             </div>
@@ -263,17 +263,17 @@ export default function Landing (): JSX.Element {
               <rect x="14" y="11" width="7" height="12" />
             </svg>
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-              Company
+              Stellar
             </span>
           </a>
           <div className="mt-4 lg:max-w-sm">
             <p className="text-sm text-gray-800">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+              Bringing you the newest and most versatile technology with best reward options.
+              
             </p>
             <p className="mt-4 text-sm text-gray-800">
-              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
+              Join Stellar today to begin your journey with Stellantis' newest technologies.
+              
             </p>
           </div>
         </div>
@@ -365,7 +365,7 @@ export default function Landing (): JSX.Element {
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">Apples</p>
+            <p className="font-semibold tracking-wide text-gray-800">Community</p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
@@ -410,7 +410,7 @@ export default function Landing (): JSX.Element {
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">Cherry</p>
+            <p className="font-semibold tracking-wide text-gray-800">Miscellaneous</p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
@@ -450,7 +450,7 @@ export default function Landing (): JSX.Element {
       </div>
       <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
         <p className="text-sm text-gray-600">
-          © Copyright 2020 Lorem Inc. All rights reserved.
+          © Copyright 2022 Stellar Inc. All rights reserved.
         </p>
         <div className="flex items-center mt-4 space-x-4 sm:mt-0">
           <a
